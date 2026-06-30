@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SchoolProjectWebDev.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="WebStyleEdit.css" />
+
+</head>
+<body class="<%= Page.Title %>">
+    
+    <form id="form1" runat="server">
+        <div>
+            <nav class="top-nav">
+                <a href="/Pages/Home.aspx">Home</a>
+                <a href="/Pages/Rules.aspx">Rules</a>
+                <a href="/Pages/Openings.aspx">Openings</a>
+                <a href="/Pages/RegisterForm.aspx">Register</a>
+                <a href="/Pages/AdminLogin.aspx">Admin Login</a>
+
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+</body>
+</html>

@@ -1,0 +1,452 @@
+﻿body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+img 
+{
+    border-radius: 20px;
+    width: 300px;
+}
+h1 
+{
+    text-decoration: underline;
+}
+/* Navigation bar: */
+
+.top-nav 
+{
+    background-color: #1e1e1e;
+    padding: 15px 30px;
+    display: flex;
+    gap: 25px;
+}
+.top-nav a 
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.top-nav a:hover
+{
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+/* External link: */
+
+.external-link 
+{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 19px;
+    color: #0d47a1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.external-link:hover
+{
+    text-decoration: underline;
+    color: #1565c0;
+}
+/* Images in row class: */
+.image-row 
+{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+/* All pages with a smooth see through blured background: */
+.page-content 
+{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 110px;
+}
+/* Body changes: */
+body.Home 
+{
+    background-image: url('images/dark-wooden-chess-pieces-against-a-black-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    
+}
+body.Openings
+{
+    background-image:url('images/single-chess-piece-in-focus-with-blurry-backdrop.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    backdrop-filter:blur(5px);
+
+}
+
+body.Rules 
+{
+    background-color: rgb(241, 187, 102);
+    background: linear-gradient(to right, #7dad2d, #9be5e0);
+    
+    
+}
+/* Register Page styling Form */
+/*@font-face
+{
+    font-family: 'roboto';
+    src:url(fonts/Roboto_Condensed-Light.ttf);
+} */
+body.Register 
+{
+    
+    background-image: url(images/chessGameBackgroundImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    backdrop-filter: blur(8px);
+}
+.Register form 
+{
+    position: relative;
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin-bottom: 500px;
+    border-radius: 15px;
+    min-width: 200px;
+    color: rgb(238 248 248);
+}
+#welcome
+{
+    position:absolute;
+    left: 300px;
+    padding-right: 40px;
+    
+}
+#welcomeLine
+{
+    padding-left:200px;
+}
+label 
+{
+    display: block;
+    margin-top: 1em;
+}
+label:first-of-type 
+{
+    margin-top: 0;
+}
+/*still draft, not finished project: */
+#gender
+{
+    width:16em;
+    border-radius: 10px;
+    height: 2.2em;
+    background-color: rgb(169, 247, 230);
+    background: linear-gradient(to left, #eabd7d, #ffffff);
+}
+input[type=email], [type=password], [type=tel], [type=text], [type=date], select 
+{
+    font-size: 15px;
+    padding: 5px;
+    border: solid 1px #999;
+    border-radius: 10px;
+    width: 15em;
+    background-color: rgb(169, 247, 230);
+    background: linear-gradient(to left, #eabd7d, #ffffff);
+}
+
+
+
+input[type="reset"], input[type=submit] /* Need changing*/ 
+{
+    background-color: #1e1e1e;
+    color: white;
+    font-weight: 800;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#form-buttons 
+{
+    display: flex;
+    gap: 4px;
+    margin-top: 25px;
+}
+input[type=reset]:hover, [type=submit]:hover 
+{
+    background-color: white;
+    color: #1e1e1e;
+}
+
+/*ADMIN LOGIN ONLY UNTIL NEXT COMMENT*/
+body.AdminLogin {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url("images/AdminLoginBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.AdminLogin .page-content 
+{
+    max-width: 430px;
+    margin: 90px auto;
+    padding: 45px 50px;
+    border-radius: 38px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(70, 130, 255, 0.35);
+    backdrop-filter: blur(6px);
+}
+
+body.AdminLogin .page-content h1 
+{
+    margin: 0 0 35px 0;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: underline;
+    text-shadow: 0 0 12px rgba(80, 150, 255, 0.45);
+}
+
+body.AdminLogin .page-content label 
+{
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+body.AdminLogin .page-content input[type="text"],
+body.AdminLogin .page-content input[type="password"] 
+{
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 22px;
+    border: none;
+    border-radius: 13px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #fff8ec, #f1d19a);
+    color: #222;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+body.AdminLogin .page-content input[type="text"]:focus,
+body.AdminLogin .page-content input[type="password"]:focus 
+{
+    box-shadow: 0 0 0 3px rgba(65, 105, 255, 0.55);
+    transform: scale(1.01);
+}
+
+body.AdminLogin .page-content input[type="submit"] 
+{
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #4d6cff, #233fd6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 0 18px rgba(45, 95, 255, 0.45);
+}
+
+body.AdminLogin .page-content input[type="submit"]:hover 
+{
+    background: linear-gradient(135deg, #6380ff, #304ee6);
+    transform: translateY(-2px);
+}
+
+body.AdminLogin .page-content input[type="submit"]:active 
+{
+    transform: translateY(0);
+}
+
+body.AdminLogin .page-content span 
+{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffb3b3;
+}
+
+
+body.AdminLogin .page-content br 
+{
+    display: none;
+}
+/*USER TABLE ONLY UNTIL NEXT COMMENT*/
+body.UserTable 
+{
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 244, 224, 0.35), rgba(255, 230, 185, 0.45)), url("images/UserTableBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #3a2a16;
+}
+
+body.UserTable .page-content 
+{
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 45px 50px;
+    border-radius: 38px;
+    background-color: rgba(255, 248, 235, 0.88);
+    color: #3a2a16;
+    text-align: center;
+    box-shadow: 0 14px 45px rgba(90, 55, 20, 0.28);
+    border: 1px solid rgba(160, 105, 35, 0.28);
+    backdrop-filter: blur(7px);
+}
+
+body.UserTable .page-content h1 
+{
+    margin: 0 0 32px 0;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #6b3f0f;
+    text-decoration: underline;
+    text-shadow: 0 2px 7px rgba(255, 230, 180, 0.8);
+}
+
+body.UserTable table 
+{
+    width: 100%;
+    margin: 0 auto 35px auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.96);
+    color: #3a2a16;
+    box-shadow: 0 10px 25px rgba(95, 60, 25, 0.22);
+}
+
+body.UserTable th 
+{
+    background: linear-gradient(135deg, #d89a25, #9c5f12);
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 238, 200, 0.45);
+}
+
+body.UserTable td 
+{
+    padding: 12px;
+    border: 1px solid rgba(180, 135, 75, 0.22);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body.UserTable tr:nth-child(even) td 
+{
+    background-color: #fff3df;
+}
+
+body.UserTable tr:nth-child(odd) td 
+{
+    background-color: #fffaf1;
+}
+
+body.UserTable tr:hover td 
+{
+    background-color: #ffe2aa;
+}
+
+body.UserTable label 
+{
+    display: inline-block;
+    margin: 12px 10px 12px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4a3012;
+}
+
+body.UserTable input[type="text"] 
+{
+    width: 240px;
+    padding: 12px 14px;
+    margin: 8px 12px 8px 0;
+    border: 1px solid rgba(170, 115, 45, 0.45);
+    border-radius: 13px;
+    font-size: 15px;
+    background-color: rgba(255, 250, 240, 0.95);
+    color: #3a2a16;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.25s ease;
+}
+
+body.UserTable input[type="text"]:focus 
+{
+    border-color: #c98722;
+    box-shadow: 0 0 0 3px rgba(216, 154, 37, 0.28);
+    transform: scale(1.01);
+}
+
+body.UserTable input[type="submit"] 
+{
+    padding: 12px 25px;
+    margin: 8px 7px;
+    border: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #d89a25, #9c5f12);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 7px 18px rgba(120, 75, 20, 0.28);
+}
+
+body.UserTable input[type="submit"]:hover 
+{
+    background: linear-gradient(135deg, #e7ad3c, #b87518);
+    transform: translateY(-2px);
+}
+
+body.UserTable input[type="submit"]:active 
+{
+    transform: translateY(0);
+}
+
+body.UserTable span 
+{
+    display: block;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8b2b1b;
+}
+
+body.UserTable br 
+{
+    display: none;
+}
+
